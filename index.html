@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/all.css"/>
+</head>
+<body>
+
+        <script src="https://www.gstatic.com/firebasejs/6.5.0/firebaseapp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.5.0/firebasefirestore.js"></script>
+        <script src="./js/index.js"></script>
+        
+    <div class="header-wrapper">
+        <div class="header-content container">
+            <div class='header-logo'>
+                <i class="fab fa-instagram fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container content">
+        <div class="row">
+            <div class="col-4">
+                <img class="profile-pic" src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-9/13237870_1717206468550140_7530501783167220314_n.png?_nc_cat=106&_nc_oc=AQnyqSlAa86A2V0FzUz_dhGxDemD7iO5anzLWN2mYHdrYpZJFD4pZp21lHP78tnF2IaoGuD0I7mJE0yQuVtk9yCS&_nc_ht=scontent.fkul14-1.fna&oh=ac1a0e6472e18050b5f0dae36efe7dca&oe=5E12AFF5"/>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="profile-id">thelead.io</div>
+                </div>
+                <div class="row">
+                    <div class="col-3 profile">101 posts</div>
+                    <div class="col-3 profile">141 followers</div>
+                    <div class="col-3 profile">430 following</div>
+                </div>
+                <div class="row">
+                    <label class="profile-name">The Lead</label>
+                </div>
+            </div>
+        </div>
+        <div class="row posts">
+            <div class="col-4 post">
+                <img class="post-img" data-toggle="modal" data-target="#modal-001"
+                 src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-9/60484604_2307020952902019_4495354458393280512_o.jpg?_nc_cat=111&_nc_oc=AQn8jdOTS_1v2zKdFvXIDxa2K_JTjIvfhMhwMa7J7HgSDmtaLICkQLvz1-YlYKgzY0Gq7dQr_Ojp43THNczqJNJD&_nc_ht=scontent.fkul14-1.fna&oh=6a3eeda06cc2d51e3550bb3d82597d98&oe=5E08925A"/>
+                
+                 <div class="modal fade" id="modal-001" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="row">
+                            <div class="col-7">
+                                    <img class="modal-img"
+                                    src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-9/60484604_2307020952902019_4495354458393280512_o.jpg?_nc_cat=111&_nc_oc=AQn8jdOTS_1v2zKdFvXIDxa2K_JTjIvfhMhwMa7J7HgSDmtaLICkQLvz1-YlYKgzY0Gq7dQr_Ojp43THNczqJNJD&_nc_ht=scontent.fkul14-1.fna&oh=6a3eeda06cc2d51e3550bb3d82597d98&oe=5E08925A"/>
+                            </div>
+                            <div class="col-5 modal-comment">
+                                <div class="modal-header">
+                                    <img class="modal-profile-pic profile-pic" src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-9/13237870_1717206468550140_7530501783167220314_n.png?_nc_cat=106&_nc_oc=AQnyqSlAa86A2V0FzUz_dhGxDemD7iO5anzLWN2mYHdrYpZJFD4pZp21lHP78tnF2IaoGuD0I7mJE0yQuVtk9yCS&_nc_ht=scontent.fkul14-1.fna&oh=ac1a0e6472e18050b5f0dae36efe7dca&oe=5E12AFF5"/>
+                                    <label class="modal-profile-id profile-id">thelead.io</label>
+                                </div>
+                                <div class="modal-body" id="post-1">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="modal-comment-img profile-pic" src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-9/13237870_1717206468550140_7530501783167220314_n.png?_nc_cat=106&_nc_oc=AQnyqSlAa86A2V0FzUz_dhGxDemD7iO5anzLWN2mYHdrYpZJFD4pZp21lHP78tnF2IaoGuD0I7mJE0yQuVtk9yCS&_nc_ht=scontent.fkul14-1.fna&oh=ac1a0e6472e18050b5f0dae36efe7dca&oe=5E12AFF5"/>
+                                            
+                                        </div>
+                                        <div class="col-9">
+                                            <label class="modal-comment-id profile-id">thelead.io</label>
+                                            <label class="msg">
+                                                LEAD's PodCast - Cerebo
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modal-footer modal-footer-like">
+                                    <i class="far fa-heart fa-2x"></i>
+                                    <i class="far fa-comment fa-2x"></i>
+                                    <div class="like-message">
+                                        Liked by <b>thelead</b>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <input id="modal-1" type="text" placeholder="Add a comment..." class="comment"/>
+                                    <button type="submit" class="btn comment-btn" onclick="post_comment('modal-1')">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
