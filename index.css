@@ -1,0 +1,142 @@
+body{
+    background-color: #fafafa;
+    }
+.header-wrapper{
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: height .2s ease-in-out;
+    height: 77px;
+}
+.header-content {
+    display: flex;
+    flex-direction: row;
+    height: 77px;
+    justify-content: center;
+    max-width: 1010px;
+    padding: 26px 20px;
+    transition: height .2s ease-in-out;
+    width: 100%;
+}
+.header-logo{
+    flex: 1 9999 0%;
+    min-width: 40px;
+}
+.header-split{
+    background-color: #262626;
+    height: 28px;
+    margin: 0 16px;
+    width: 1px;
+    display:inline-block;
+}
+.content{
+    margin-top:100px;
+    padding-top:1%;
+    padding-left:10%;
+    padding-right:10%;
+    }
+.profile-pic{
+    border-radius: 50%;
+    width:65%;
+}
+.profile-id{
+    font-size:30px;
+    padding-top:2%;
+    font-family: "Open Sans";
+}
+.profile{
+    font-size:17px;
+    text-align: left;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.profile-name{
+    font-size: 17px;
+    font-weight: bold;
+    }
+    .posts{
+        padding-top:5%;
+        padding-bottom:10%;
+        }
+        .post{
+            height: 250px;
+            }
+            .posts .post-img{
+            width: 110%;
+            height: 100%;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top:10px;
+            }
+            .modal-img{
+            width:110%;
+            }
+            .modal-profile-pic{
+            width:15% !important;
+            }
+
+            .modal-profile-id{
+                font-size: 12px !important;
+                text-align: left !important;
+                position: absolute;
+                padding-left: 12%;
+                padding-top: 3%;
+                font-weight: bold;
+                }
+                .modal-dialog{
+                max-width: 65%;
+                margin-top: 5%;
+                }
+                .modal-body{
+                height:auto;
+                }
+
+                .modal-comment{
+                    padding-left:5%;
+                    padding-right:5%;
+                    font-size:12px;
+                    }
+                    .modal-comment-img{
+                    width:100% !important;
+                    }
+                    .modal-comment-id {
+                    font-size:12px;
+                    font-weight: bold;
+                    }
+                    .modal-footer-like{
+                        height: 10%;
+                        float: left;
+                        width: 100%;
+                        display: block;
+                        padding-top: 2%;
+                        padding-bottom: 1%;
+                        }
+                        .like-message{
+                            margin:2%;
+                            font-size: 12px;
+                            }
+                            .comment{
+                            border: 0px;
+                            width: 100%;
+                            padding:1px;
+                            }
+                            .comment:focus{
+                            outline-width: 0;
+                            }
+                            .comment-btn{
+                            border: 0px;
+                            color:#C5E1FA;
+                            float:right;
+                            display:content;
+                            }
+                            .comment-btn:hover{
+                                color:#C5E1FA;
+                                }
+                                .msg{
+                                padding-left:5px;
+                                }
